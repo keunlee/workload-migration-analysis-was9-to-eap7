@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>was9-ear-application.ear - Application Details</title>
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="resources/css/windup.css" rel="stylesheet" media="screen">
+    <link href="resources/css/windup.java.css" rel="stylesheet" media="screen">
+    <link href="resources/img/mta-icon.png" rel="shortcut icon" type="image/x-icon"/>
+    
+    <script src="resources/js/jquery-3.3.1.min.js"></script>
+    <script src="resources/js/windup-overview-head.js"></script>
+    
+    <style>
+        .desc { z-index: 5000; }
+
+        /* Light yellow bg for the issue info box. */
+        .hint-detail-panel > .panel-heading {
+            border-color: #c2c2c2;
+            background-color: #fbf4b1;
+        }
+        .hint-detail-panel {
+            border-color: #a8d0e3;
+            background-color: #fffcdc;
+        }
+        /* Reduce the padding, default is too big. */
+        .hint-detail-panel > .panel-body { padding-bottom: 0; }
+    </style>
+</head>
+<body role="document" class="java-application report-Application Details">
+
+    <!-- Navbar -->
+    <div id="main-navbar" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="wu-navbar-header navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="wu-navbar-header">
+              <strong class="wu-navbar-header">Migration Toolkit for Applications</strong><img align="right" class="wu-navbar-header" src="resources/img/Logo-RedHat-A-Reverse-RGB.png" />
+            </span>        </div>
+
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav">
+            <li class="">
+                <a href="../index.html"><i class="glyphicon glyphicon-home"></i> All Applications</a>
+            </li>
+
+
+
+                <li class="">
+                    <a href="report_index_was9_ear_application_ear.html">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                      Dashboard
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="migration_issues.html">
+                        <i class="glyphicon glyphicon-warning-sign"></i>
+                      Issues
+                    </a>
+                </li>
+
+
+                <li class="active">
+                    <a href="#">
+                        <i class="glyphicon glyphicon-th-list"></i>
+                      Application Details
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="techReport_was9_ear_application_ear.html">
+                        <i class="fa fa-rocket"></i>
+                      Technologies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_graph_report.html">
+                        <i class="glyphicon glyphicon-tree-deciduous"></i>
+                      Dependencies Graph
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="dependency_report_was9_ear_application_ear.html">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                      Dependencies
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="remotereport_was9_ear_application_ear.html">
+                        <i class="glyphicon service-nav-logo"></i>
+                      Remote Services
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="tattletale_was9_ear_application_ear.html">
+                        <i class="glyphicon tattletale-nav-logo"></i>
+                      Tattletale
+                    </a>
+                </li>
+
+
+                <li class="">
+                    <a href="about_was9_ear_application_ear.html">
+                        <i class="fa fa-question-circle"></i>
+                      About
+                    </a>
+                </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+<li>
+    <a href="#" class="feedback-nav-btn jiraFeedbackTrigger"><i class="glyphicon glyphicon-comment"></i> Send Feedback </a>
+</li>
+
+
+    <script type="text/javascript" src="https://issues.redhat.com/s/f215932e68571747ac58d0f5d554396f-T/en_US-r7luaf/6346/82/1.4.16/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&amp;collectorId=8b9e338b"></script>
+
+    <script type="text/javascript">
+
+    var FEEDBACK_JS_ADDED = false;
+    var FEEDBACK_FORM_TRIGGER = null;
+
+    function displayFeedbackForm() {
+        FEEDBACK_FORM_TRIGGER();
+    }
+
+    window.ATL_JQ_PAGE_PROPS = {
+        "triggerFunction": function(showCollectorDialog) {
+            FEEDBACK_FORM_TRIGGER = showCollectorDialog;
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", function(event) {
+            jQuery(".jiraFeedbackTrigger").click(function(e) {
+                e.preventDefault();
+                displayFeedbackForm();
+            });
+    });
+    </script>
+    </ul>
+    <script type="text/javascript">
+        var script   = document.createElement("script");
+        script.type  = "text/javascript";
+            script.src   = "resources/js/navbar.js";
+        document.body.appendChild(script);
+    </script>
+        </div><!-- /.nav-collapse -->
+    </div>
+    <!-- / Navbar -->
+
+    <div class="container-fluid" role="main">
+
+        <div class="row">
+            <div class="page-header page-header-no-border">
+                <h1>
+                    <div class="main">Application Details
+                    <i class="glyphicon glyphicon-info-sign" data-toggle="tooltip" data-placement=right title="An exhaustive list of all of the information and issues found within the application."></i></div>
+                    <div class="path">was9-ear-application.ear</div>
+                </h1>
+            </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="row container-fluid">
+            <div class="container mainGraphContainer">
+                <table class="summaryLayout" style="width: 100%;">
+                    <tr>
+                        <td colspan="2">
+                            <div class="points" style="text-align: center; color: #00254b; padding-bottom: 1ex;">
+                                <div class="number">4</div>
+                                <div>Story Points</div>
+                            </div>
+                            <div id="treeView-Projects-wrap" class="short">
+                                <div id="overlayFog" class="showMore">
+                                    <span style="position: relative; top: 4ex; left: 4em;" class="hideWhenComputed">Computing...</span>
+                                </div>
+                                <div id="treeView-Projects"></div>
+                                <div class="showButtons hideUntilComputed">
+                                    <a class="showMore" href="#" onclick='$("#treeView-Projects-wrap").removeClass("short")'>Show all &#x21F2;</a>
+                                    <a class="showLess" href="#" onclick='$("#treeView-Projects-wrap").addClass("short")'>Show less &#x21F1;</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="chartBoundary">
+                                <h4>Java Incidents by Package</h4>
+                                <div id="application_pie" class="windupPieGraph"></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="chartBoundary">
+                                <h4>Tags Found - Occurrence Count</h4>
+                                <div id="tagsChartContainer-sum" style="height: 300px; width: 500px;">
+                                    <div class="hideWhenComputed" style="position: relative; top: 4ex; left: 4em;">Computing...</div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <script>
+            // For projects TreeView - used when gathering the projects data to JavaScript.
+            var rootProject = null;
+            var parentProject = null;
+            var thisProject = null;
+        </script>
+
+
+        <div class="row container-fluid">
+            <div class="theme-showcase" role="main">
+                <div>
+                    <a id="collapseAll" href="javascript:collapseAll()">Collapse All</a>
+                    <a id="expandAll" href="javascript:expandAll()">Expand All</a>
+                </div>
+
+    <script>
+
+        thisProject = new ProjectNode("was9-ear-application.ear", "project_45064-project_45064");
+        thisProject.sourceBased = false;
+        var $tagLabels = $("#project_45064 .projectFile .tech .label");
+        var $tagWarns = $tagLabels.find(".warning");
+        $tagWarns.add( $tagLabels.find(".danger") );
+        thisProject.warnings = $tagWarns.length;
+        thisProject.tags = []; /// TODO: Need to execute all this after the tag JS analysis.
+
+        if (parentProject == null) {
+            rootProject = thisProject;
+            console.log("Root project set to: " + rootProject.name + ", id: " + rootProject.id);
+        } else {
+            parentProject.addSubproject(thisProject);
+            console.log("Adding child: " + thisProject.name + "," + thisProject.id + " to parent: " + parentProject.name + "," + parentProject.id);
+        }
+        parentProject = thisProject;
+    </script>
+
+    <script>
+
+        thisProject = new ProjectNode("was9-application.war", "project_28912-project_28912");
+        thisProject.sourceBased = false;
+        var $tagLabels = $("#project_28912 .projectFile .tech .label");
+        var $tagWarns = $tagLabels.find(".warning");
+        $tagWarns.add( $tagLabels.find(".danger") );
+        thisProject.warnings = $tagWarns.length;
+        thisProject.tags = []; /// TODO: Need to execute all this after the tag JS analysis.
+
+        if (parentProject == null) {
+            rootProject = thisProject;
+            console.log("Root project set to: " + rootProject.name + ", id: " + rootProject.id);
+        } else {
+            parentProject.addSubproject(thisProject);
+            console.log("Adding child: " + thisProject.name + "," + thisProject.id + " to parent: " + parentProject.name + "," + parentProject.id);
+        }
+        parentProject = thisProject;
+    </script>
+
+
+    <script>
+        parentProject = parentProject.getParent();
+    </script>
+
+    <script>
+        parentProject = parentProject.getParent();
+    </script>
+    <div class="panel panel-primary projectBox" id="project_45064" data-windup-projectguid="fde048e8-ccc0-4f28-970c-5dcf83cdd4c6" data-windup-project-storypoints="0">
+        <div class="panel-heading panel-collapsed clickable">
+            <span class="pull-left"><i class="glyphicon glyphicon-expand arrowIcon"></i></span>
+            <h3 class="panel-title">
+                    <span class="name">was9-ear-application.ear</span>
+
+                <span class="storyPoints">(<span class="points">0</span> <span class="legend">story points</span>)</span>
+                <span title="fa633587">&nbsp;</span>
+            </h3>
+        </div>
+        <div class="panel-body" style="display:none">
+        <div class="container-fluid summaryMargin">
+
+            <table class="summaryLayout">
+                <tr>
+                    <td colspan="2">
+                        <!-- Points -->
+                        <div class="points">
+                            <div class="number">0</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <!-- Basic info -->
+                        <div class="basicInfo">
+                            <table class="table">
+                                <tr>
+                                    <th>Maven coordinates</th>
+                                    <td>  </td>
+                                </tr>
+                                <tr>
+                                    <th>Organization</th>
+                                    <td>
+                                                Unknown
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Name</th>
+                                    <td>was9-ear-application.ear</td>
+                                </tr>
+                                <tr>
+                                    <th>Version</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>Links</th>
+                                    <td>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Description</th>
+                                    <td>
+                                        Not available
+                                    </td>
+                                </tr>
+                            </table>
+                        </div><!-- /.basicInfo -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- Packages pie chart -->
+                        <div class="chartBoundary">
+                            <h4>Java Incidents by Package</h4>
+                            <div id="project_45064_pie" class="windupPieGraph"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tagsBarChart chartBoundary">
+                            <h4>Tags found - occurrence count</h4>
+                            <!-- Tags bar chart will be appended here. -->
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div>
+                <div class="panel panel-default hint-detail-panel">
+                    <div class="panel-heading">
+                        <h4 class="panel-title pull-left">Issue Detail: Java EE Application Deployment</h4>
+                            <div class="pull-right">
+                                <a class="sh_url" title="javaee-technology-usage-00060" href="windup_ruleproviders.html#javaee-technology-usage-00060">Show Rule</a>
+                            </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="panel-body">
+                        <p>The application uses Java EE Application Deployment.</p>
+                    </div>
+                </div>
+        </div>
+        <table class="subprojects table table-striped table-bordered">
+            <tr>
+                <th>Name</th><th>Tags</th><th>Issues</th><th>Story Points</th>
+            </tr>
+
+    <tr class="projectFile">
+        <td class="path">
+            <a href="MANIFEST_MF.html?project=45064">
+                META-INF/MANIFEST.MF
+            </a>
+        </td>
+        <td class="tech">
+    <span title="INFORMATIONAL" class="label label-info tag-Manifest "
+          data-windup-tag="Manifest">
+                    Manifest 
+    </span>
+            <div style="clear: both;"></div>
+        </td>
+
+        <td class="warnCount0">
+        </td>
+
+        <td>
+            0
+        </td>
+    </tr>
+        </table>
+        </div>
+    </div>
+
+    <div class="panel panel-primary projectBox" id="project_28912" data-windup-projectguid="f1766c65-7313-4d18-9243-122452e59ad3" data-windup-project-storypoints="4">
+        <div class="panel-heading panel-collapsed clickable">
+            <span class="pull-left"><i class="glyphicon glyphicon-expand arrowIcon"></i></span>
+            <h3 class="panel-title">
+                    <span class="name">was9-ear-application.ear/was9-application.war</span>
+
+                <span class="storyPoints">(<span class="points">4</span> <span class="legend">story points</span>)</span>
+                <span title="c879f974">&nbsp;</span>
+            </h3>
+        </div>
+        <div class="panel-body" style="display:none">
+        <div class="container-fluid summaryMargin">
+
+            <table class="summaryLayout">
+                <tr>
+                    <td colspan="2">
+                        <!-- Points -->
+                        <div class="points">
+                            <div class="number">4</div>
+                            <div>Story Points</div>
+                        </div>
+
+                        <!-- Basic info -->
+                        <div class="basicInfo">
+                            <table class="table">
+                                <tr>
+                                    <th>Maven coordinates</th>
+                                    <td>  </td>
+                                </tr>
+                                <tr>
+                                    <th>Organization</th>
+                                    <td>
+                                                Unknown
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Name</th>
+                                    <td>was9-application.war</td>
+                                </tr>
+                                <tr>
+                                    <th>Version</th>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>Links</th>
+                                    <td>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Description</th>
+                                    <td>
+                                        Not available
+                                    </td>
+                                </tr>
+                            </table>
+                        </div><!-- /.basicInfo -->
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- Packages pie chart -->
+                        <div class="chartBoundary">
+                            <h4>Java Incidents by Package</h4>
+                            <div id="project_28912_pie" class="windupPieGraph"></div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="tagsBarChart chartBoundary">
+                            <h4>Tags found - occurrence count</h4>
+                            <!-- Tags bar chart will be appended here. -->
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <table class="subprojects table table-striped table-bordered">
+            <tr>
+                <th>Name</th><th>Tags</th><th>Issues</th><th>Story Points</th>
+            </tr>
+
+    <tr class="projectFile">
+        <td class="path">
+            <a href="MANIFEST_MF.1.html?project=45064">
+                META-INF/MANIFEST.MF
+            </a>
+        </td>
+        <td class="tech">
+    <span title="INFORMATIONAL" class="label label-info tag-Manifest "
+          data-windup-tag="Manifest">
+                    Manifest 
+    </span>
+            <div style="clear: both;"></div>
+        </td>
+
+        <td class="warnCount0">
+        </td>
+
+        <td>
+            0
+        </td>
+    </tr>
+
+    <tr class="projectFile">
+        <td class="path">
+            <a href="ibm_web_bnd_xml.html?project=45064">
+                WEB-INF/ibm-web-bnd.xml
+            </a>
+        </td>
+        <td class="tech">
+            <div style="clear: both;"></div>
+        </td>
+
+        <td class="warnCount1">
+                    WebSphere web application binding (ibm-web-bnd)
+        </td>
+
+        <td>
+            3
+        </td>
+    </tr>
+
+    <tr class="projectFile">
+        <td class="path">
+            <a href="ibm_web_ext_xml.html?project=45064">
+                WEB-INF/ibm-web-ext.xml
+            </a>
+        </td>
+        <td class="tech">
+            <div style="clear: both;"></div>
+        </td>
+
+        <td class="warnCount1">
+                    WebSphere JSP engine configuration (ibm-web-ext)
+        </td>
+
+        <td>
+            1
+        </td>
+    </tr>
+
+    <tr class="projectFile">
+        <td class="path">
+            <a href="web_xml.html?project=45064">
+                WEB-INF/web.xml
+            </a>
+        </td>
+        <td class="tech">
+    <span title="INFORMATIONAL" class="label label-info tag-WebXML "
+          data-windup-tag="Web XML">
+                    Web XML 3.1
+    </span>
+            <div style="clear: both;"></div>
+        </td>
+
+        <td class="warnCount1">
+                    Web XML
+        </td>
+
+        <td>
+            0
+        </td>
+    </tr>
+
+    <tr class="projectFile">
+        <td class="path">
+            <a href="ConferenceResource_java.html?project=45064">
+                com.redhat.jaxrs.ConferenceResource
+            </a>
+        </td>
+        <td class="tech">
+    <span title="INFORMATIONAL" class="label label-info tag-DecompiledJavaFile "
+          data-windup-tag="Decompiled Java File">
+                    Decompiled Java File 
+    </span>
+            <div style="clear: both;"></div>
+        </td>
+
+        <td class="warnCount0">
+        </td>
+
+        <td>
+            0
+        </td>
+    </tr>
+
+    <tr class="projectFile">
+        <td class="path">
+            <a href="HelloPervasiveServlet_java.html?project=45064">
+                com.redhat.servlets.HelloPervasiveServlet
+            </a>
+        </td>
+        <td class="tech">
+    <span title="INFORMATIONAL" class="label label-info tag-DecompiledJavaFile "
+          data-windup-tag="Decompiled Java File">
+                    Decompiled Java File 
+    </span>
+    <span title="INFORMATIONAL" class="label label-info tag-Servlet "
+          data-windup-tag="Servlet">
+                    Servlet 
+    </span>
+    <span title="INFORMATIONAL" class="label label-info tag-Servlet "
+          data-windup-tag="Servlet">
+                    Servlet 
+    </span>
+    <span title="INFORMATIONAL" class="label label-info tag-Servlet "
+          data-windup-tag="Servlet">
+                    Servlet 
+    </span>
+                <span class="label label-info tag" data-windup-tag="catchall">catchall</span>
+            <div style="clear: both;"></div>
+        </td>
+
+        <td class="warnCount4">
+                <div class="warns">Warnings: 4 items</div>
+                <ul class="notifications">
+                        <li class="warning"> Java Servlet <small>1&#215;</small></li>
+                        <li class="warning"> IBM proprietary type reference <small>3&#215;</small></li>
+                </ul>
+        </td>
+
+        <td>
+            0
+        </td>
+    </tr>
+        </table>
+        </div>
+    </div>
+
+
+            </div> <!-- /container -->
+
+
+<div style="text-align: left; font-size: small; color: gray; font-style: italic;">Page generated: Apr 21, 2021, 12:58:06 PM</div>        </div>
+
+
+
+        <script src="resources/js/jquery.storageapi.min.js"></script>
+        <script src="resources/js/jquery.color-2.1.2.min.js"></script>
+        <script src="resources/libraries/flot/jquery.flot.min.js"></script>
+        <script src="resources/libraries/flot/jquery.flot.pie.min.js"></script>
+        <link   rel="stylesheet"      href="resources/libraries/jstree/themes/default/style.min.css"/>
+        <script type="text/javascript" src="resources/libraries/jstree/jstree.min.js"></script>
+        <script src="resources/js/windup-overview.js"></script>
+        <script src="resources/js/bootstrap.min.js"></script>
+
+<script type='text/javascript'>
+ WINDUP_PACKAGE_PIE_DATA = typeof(WINDUP_PACKAGE_PIE_DATA) == 'undefined' ? {} : WINDUP_PACKAGE_PIE_DATA;
+ WINDUP_PACKAGE_PIE_DATA['application_pie'] = [];
+ WINDUP_PACKAGE_PIE_DATA['application_pie'].push({label: 'com.ibm.*', data: 3});
+ $(function () {
+   var data_application_pie = [];
+ data_application_pie.push({ label: 'com.ibm.* - 3&times;', data: 3 });
+   $.plot($('#application_pie'), data_application_pie, {
+       series: { pie: { show: true,  innerRadius: 0.55, offset: { top: 0, left: -120 } } },
+       colors: $.map( data_application_pie, function(item, index) {
+           var len = data_application_pie.length;
+           return jQuery.Color({
+               hue: ((index*0.95*360/len) + 90/len) % 360,
+               saturation: 0.95,
+               lightness: ((index%4 == 3 ? 1:0)/-4)+0.55, alpha: 1
+           }).toHexString();
+       })
+   });
+ });</script>
+
+<script type='text/javascript'>$('#project_45064_pie').parent().remove()</script>
+<script type='text/javascript'>
+ WINDUP_PACKAGE_PIE_DATA = typeof(WINDUP_PACKAGE_PIE_DATA) == 'undefined' ? {} : WINDUP_PACKAGE_PIE_DATA;
+ WINDUP_PACKAGE_PIE_DATA['project_28912_pie'] = [];
+ WINDUP_PACKAGE_PIE_DATA['project_28912_pie'].push({label: 'com.ibm.*', data: 3});
+ $(function () {
+   var data_project_28912_pie = [];
+ data_project_28912_pie.push({ label: 'com.ibm.* - 3&times;', data: 3 });
+   $.plot($('#project_28912_pie'), data_project_28912_pie, {
+       series: { pie: { show: true,  innerRadius: 0.55, offset: { top: 0, left: -120 } } },
+       colors: $.map( data_project_28912_pie, function(item, index) {
+           var len = data_project_28912_pie.length;
+           return jQuery.Color({
+               hue: ((index*0.95*360/len) + 90/len) % 360,
+               saturation: 0.95,
+               lightness: ((index%4 == 3 ? 1:0)/-4)+0.55, alpha: 1
+           }).toHexString();
+       })
+   });
+ });</script>
+
+
+        <script>
+            t0 = Date.now();
+            expandMemory();
+            console.log("PERF: expandMemory() took " + (Date.now() - t0) + " ms.");
+
+
+            // Panels toggling - slide up or down.
+            $(document).on("click", ".panel-heading", function(event) {
+                togglePanelSlide.call(this, event);
+            });
+        </script>
+        <script src="resources/tagsData.js"></script>
+        <script>
+            // Tags bar charts.
+            $(document).ready( function() {
+                window.tagService = new TagService();
+                // The hierarchy of tags
+                fillTagService(window.tagService);
+                var chartObjects = {};
+                createTagCharts();
+            })
+
+
+            // Projects TreeView.
+            $(function() {
+                window.setTimeout( function(){
+                    t0 = Date.now();
+                    renderAppTreeView(rootProject);
+                    console.log("PERF: renderAppTreeView() took " + (Date.now() - t0) + " ms.");
+                }, 500 );
+            });
+        </script>
+        <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script>
+    </div>
+</body>
+</html>

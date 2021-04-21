@@ -1,0 +1,1 @@
+app_dependencies({"items":{"c879f97417b8620e392b18db029cd945d498fda3":{"kind":"War","metadata":{"name":"was9-application.war"}},"fa633587d9ef82815866543c009244fa551070ae":{"kind":"Ear","metadata":{"name":"was9-ear-application.ear"}}},"relations":[{"source":"c879f97417b8620e392b18db029cd945d498fda3","target":"fa633587d9ef82815866543c009244fa551070ae"}]});
